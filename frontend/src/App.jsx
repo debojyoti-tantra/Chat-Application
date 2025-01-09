@@ -43,7 +43,7 @@ function App() {
          //recive data from backend
          socket.on('getOnlineUsers', (onlineUsers) => {
             dispatch(setOnlineUsers(onlineUsers));
-            console.log(dispatch(setOnlineUsers(onlineUsers)));
+            // console.log(dispatch(setOnlineUsers(onlineUsers)));
          });
          
          return ()=> socket.close();
