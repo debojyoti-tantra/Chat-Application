@@ -21,7 +21,7 @@ export default function Signup() {
    const onSubmitHandler = async (e) => {
       e.preventDefault();
       try {
-         const res = await axios.post(`https://chat-application-backend-green.vercel.app/api/v1/user/register`, user, {
+         const res = await axios.post(`https://chat-application-p97k.onrender.com/api/v1/user/register`, user, {
             header: {
                'Content-Type': 'application/json'
             },

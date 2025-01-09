@@ -19,7 +19,7 @@ export default function Sidebar() {
    
    const logoutHandler = async () => {
       try {
-         const res = await axios.get(`https://chat-application-backend-green.vercel.app/api/v1/user/logout`);
+         const res = await axios.get(`https://chat-application-p97k.onrender.com/api/v1/user/logout`);
          // localStorage.removeItem("authUser");
          navigate("/login")
          toast.success(res.data.message);

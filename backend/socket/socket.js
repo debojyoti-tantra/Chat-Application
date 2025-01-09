@@ -11,7 +11,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
    cors: {
-      origin: ["https://chat-application-mu-three.vercel.app"],
+      origin: ["https://chat-application-p97k.onrender.com"],
       // origin: process.env.FRONTEND_URI,
       methods: ['GET', 'POST'],
       

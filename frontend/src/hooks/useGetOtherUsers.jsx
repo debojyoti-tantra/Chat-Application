@@ -11,7 +11,7 @@ const useGetOtherUsers = () => {
       const fetchOtherUsers = async () => {
          try {
             axios.defaults.withCredentials = true;
-            const res = await axios.get(`https://chat-application-backend-green.vercel.app/api/v1/user/`, { withCredentials: true });
+            const res = await axios.get(`https://chat-application-p97k.onrender.com/api/v1/user/`, { withCredentials: true });
             // store in store
             dispatch(setOtherUsers(res.data));
          } catch (error) {
