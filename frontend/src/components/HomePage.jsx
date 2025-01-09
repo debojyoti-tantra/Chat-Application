@@ -14,7 +14,7 @@ export default function Homepage() {
       if (!authUser) {
          navigate("/login");
       }
-   }, []);
+   }, [authUser]);
    
    return (
       <div className="rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-0 border border-gray-100 p-3 flex-col h-fit m-4 h-[85vh] w-[90vw]">
