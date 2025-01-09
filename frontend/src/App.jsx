@@ -31,7 +31,7 @@ function App() {
    
    useEffect(() => {  
       if (authUser) {
-         const socket = io(`${import.meta.env.VITE_BACKEND_URI}`, {
+         const socket = io(`https://chat-application-backend-green.vercel.app/`, {
             // we can pass query i.e, we can get this via backend
             query: {
                userId: authUser._id

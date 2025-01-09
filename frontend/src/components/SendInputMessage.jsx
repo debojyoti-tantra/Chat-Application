@@ -19,7 +19,7 @@ export default function SendInputMessage() {
          if (message.trim()==="") {
             toast.error("Message can't be empty")
          } else {
-            const res = await axios.post(`${import.meta.env.VITE_BACKEND_URI}/api/v1/message/send/${selectedUser?._id}`, {message}, {
+            const res = await axios.post(`https://chat-application-backend-green.vercel.app/api/v1/message/send/${selectedUser?._id}`, {message}, {
                headers:{
                   'Content-Type':'application/json'
                },

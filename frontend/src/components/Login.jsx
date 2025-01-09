@@ -18,7 +18,7 @@ export default function Login() {
    const onSubmitHandler = async (e) => {
       e.preventDefault();
       try {
-         const res = await axios.post(`${import.meta.env.VITE_BACKEND_URI}/api/v1/user/login`, user, {
+         const res = await axios.post(`https://chat-application-backend-green.vercel.app/api/v1/user/login`, user, {
             header: {
                'Content-Type': 'application/json'
             },

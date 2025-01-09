@@ -19,11 +19,12 @@ export default function Sidebar() {
    
    const logoutHandler = async () => {
       try {
-         const res = await axios.get(`${import.meta.env.VITE_BACKEND_URI}/api/v1/user/logout`);
+         const res = await axios.get(`https://chat-application-backend-green.vercel.app/api/v1/user/logout`);
          // localStorage.removeItem("authUser");
          navigate("/login")
          toast.success(res.data.message);
          dispatch(setAuthUser(null));
+         dispatch(setSelectedUser(null));
       } catch (error) {
          console.log(error);
       }
