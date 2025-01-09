@@ -3,9 +3,8 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { useState, useEffect } from 'react';
 import axios from "axios";
 import toast from "react-hot-toast";
-import {useDispatch} from "react-redux";
-import { setAuthUser } from '../redux/userSlice';
 import { useSelector, useDispatch } from 'react-redux';
+import { setAuthUser } from '../redux/userSlice';
 
 export default function Login() {
    const dispatch = useDispatch();
