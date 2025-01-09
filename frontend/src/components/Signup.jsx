@@ -6,6 +6,14 @@ import toast from "react-hot-toast"
 
 export default function Signup() {
    const navigate = useNavigate()
+
+   const {authUser} = useSelector(store=>store.user);
+
+   useEffect(() => {  
+      if (authUser) {
+         navigate("/");
+      }
+   }, [authUser]);
    
    const [user, setUser] = useState({
       fullName: "",

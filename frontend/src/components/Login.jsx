@@ -9,7 +9,15 @@ import { setAuthUser } from '../redux/userSlice';
 export default function Login() {
    const dispatch = useDispatch();
    const navigate = useNavigate();
+
+   const {authUser} = useSelector(store=>store.user);
    
+   useEffect(() => {  
+      if (authUser) {
+         navigate("/");
+      }
+   }, [authUser]);
+
    const [user, setUser] = useState({
       username: "",
       password: "",
