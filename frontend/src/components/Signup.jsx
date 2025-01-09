@@ -3,6 +3,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { useState, useEffect } from 'react';
 import axios from "axios";
 import toast from "react-hot-toast"
+import { useSelector, useDispatch } from 'react-redux';
 
 export default function Signup() {
    const navigate = useNavigate()
